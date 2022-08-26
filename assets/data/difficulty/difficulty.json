@@ -1,0 +1,21 @@
+[
+    {
+        "name": "newbie"
+    },
+
+    {
+        "name": "junior"
+    },
+
+    {
+        "name": "intermediate"
+    },
+
+    {
+        "name": "advanced"
+    },
+
+    {
+        "name": "guru"
+    }
+]

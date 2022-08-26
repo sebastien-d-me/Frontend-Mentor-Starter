@@ -1,0 +1,25 @@
+/** Components - Button **/
+.btn {
+    background-color: $green;
+    border: none;
+    border-radius: 8px;
+    color: $white;
+    display: block;
+    font-size: 20px;
+    height: 50px;
+    line-height: 20px;
+    margin: auto;
+    min-height: fit-content;
+    min-width: 300px;
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+.btn:hover {
+    background-color: $light-green;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: $grey;
+    cursor: default;
+}

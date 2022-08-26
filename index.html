@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="Starter for the Frontend Mentor challenges !" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Frontend Mentor - Starter</title>
+    <link href="./assets/images/favicon/favicon.png" rel="icon" />
+    <link href="./assets/styles/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img alt="Website logo" class="header-logo" src="./assets/images/logo/logo.png" />
+    </header>
+
+
+    <!-- Main -->
+    <main>
+        <h1 class="main-title">Frontend Mentor - Starter</h1>
+
+        <!-- Form -->
+        <form method="post" action="#">
+            <!-- Challenge -->
+            <section>
+                <h2 class="section-title">Challenge</h2>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label required" for="challenge-difficulty">Challenge difficulty</label>
+                        <select class="form-input" id="challenge-difficulty" onchange="changeDifficulty(this.value)" required>
+                            <option disabled selected value="">Please wait for options to load</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label class="form-label required" for="challenge-name">Challenge name</label>
+                        <select class="form-input" id="challenge-name" onchange="updateChallenge()" required>
+                            <option disabled selected value="">Please wait for options to load</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label required" for="challenge-link-url">Challenge Link URL</label>
+                        <input class="form-input" id="challenge-link-url" readonly required type="url" />
+                    </div>
+                    <div class="col">
+                        <label class="form-label required" for="challenge-solution-url">Challenge Solution URL</label>
+                        <input class="form-input" id="challenge-solution-url" onkeyup="verifyForm()" placeholder="https://www.frontendmentor.io/solutions/3-column-preview-card-component-31dslmyGGg" required type="url" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Author -->
+            <section>
+                <h2 class="section-title">Author</h2>
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label required" for="author-fm-profil">Frontend Mentor profil (without the @)</label>
+                        <input class="form-input" id="author-fm-profil" onkeyup="verifyForm()" placeholder="Your Frontend Mentor profil" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label required" for="author-github-profil">GitHub profil</label>
+                        <input class="form-input" id="author-github-profil" onkeyup="updateChallenge()" placeholder="Your GitHub profil name" required />
+                    </div>
+                    <div class="col">
+                        <label class="form-label required" for="author-github-repository">GitHub repository</label>
+                        <input class="form-input" id="author-github-repository" onkeyup="updateChallenge()" placeholder="Frontend-Mentor-Challenges" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <button class="btn" disabled id="btn-download" onclick="generateZip()" type="button">Download the starter !</button>
+                    </div>
+                </div>
+            </section>
+        </form>
+
+        <!-- Solution -->
+        <section>
+            <h2 class="section-title">Solution</h2>
+            <div class="row">
+                <div class="col">
+                    <label class="form-label" for="solution-title">Solution title</label>
+                    <input class="form-input" id="solution-title" name="solution-title" readonly />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label class="form-label" for="solution-repository-url">Repository URL</label>
+                    <input class="form-input" id="solution-repository-url" name="solution-repository-url" placeholder="Lorem ipsum" readonly type="url" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label class="form-label" for="solution-live-site-url">Live site URL</label>
+                    <input class="form-input" id="solution-live-site-url" name="solution-live-site-url" placeholder="Lorem ipsum" readonly type="url" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <span id="footer-copyright">© Frontend Mentor - Starter |</span>
+        <ul>
+            <li>
+                <a class="link" href="https://www.frontendmentor.io/home">Frontend Mentor</a>
+            </li>
+            <li>
+                <a class="link" href="https://github.com/sebastien-d-me/Frontend-Mentor-Starter">GitHub repository</a>
+            </li>
+            <li>
+                <a class="link" href="https://github.com/sebastien-d-me/Frontend-Mentor-Starter">Legal notice</a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <!-- JS -->
+    <script src="./assets/scripts/FileSaver.js-master/dist/FileSaver.min.js"></script>
+    <script src="./assets/scripts/jszip-main/dist/jszip.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
+</body>
+</html>

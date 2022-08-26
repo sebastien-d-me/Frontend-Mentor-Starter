@@ -1,0 +1,10 @@
+/** Layout - Header **/
+header {
+    align-items: center;
+    background-color: $black;
+    box-shadow: 0 0 5px $black;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+}

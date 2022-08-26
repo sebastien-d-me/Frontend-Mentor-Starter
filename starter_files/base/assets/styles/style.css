@@ -1,0 +1,44 @@
+/* Variables */
+:root {
+}
+
+/* Fonts */
+@font-face {
+    font-family: "";
+    src: url("../fonts/FontFolder/FontName.ttf");
+}
+
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+}
+
+/* Content */
+* {
+    font-family: "";
+}
+
+/* Attribution */
+.attribution {
+    margin: 25px auto;
+    text-align: center;
+    width: fit-content;
+}
+
+.attribution > a {
+    color: var();
+    display: block;
+    margin-bottom: 10px;
+}
+.attribution > a:last-of-type {
+    margin-bottom: 0;
+}
+
+/** Responsive **/
+@media screen and (max-width: 992px) {
+
+}

@@ -1,0 +1,28 @@
+/** Layout - Footer **/
+footer {
+    align-items: center;
+    background-color: $light-grey;
+    border-top: 1px solid $grey;
+    color: $black;
+    display: flex;
+    height: 100px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer > ul {
+    list-style: none;
+    margin: 0;
+}
+
+#footer-copyright::after {
+    content: attr(current-year);
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        flex-direction: column;
+        padding: 10px 0;
+        text-align: center;
+    }
+}

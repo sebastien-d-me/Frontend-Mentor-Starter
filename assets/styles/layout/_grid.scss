@@ -1,0 +1,26 @@
+/** Layout - Grid **/
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.row:last-child > .col {
+    margin-bottom: unset;
+}
+
+.col {
+    flex: 1 0 auto;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 800px) {
+    .row {
+        flex-direction: column;
+        gap: unset;
+    }
+
+    .row:last-child > .col {
+        margin-bottom: 25px;
+    }
+}

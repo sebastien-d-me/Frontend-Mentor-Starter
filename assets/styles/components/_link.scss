@@ -1,0 +1,10 @@
+/** Components - Link **/ 
+.link {
+    color: $red;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.link:hover {
+    color: $pink;
+}

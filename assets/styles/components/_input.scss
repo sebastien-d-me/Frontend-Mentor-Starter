@@ -1,0 +1,42 @@
+/** Components - Input **/
+.form-label {
+    display: block;
+    margin: 0 0 5px 5px;
+}
+.form-label::after {
+    content: " :";
+}
+
+.form-label.required::after {
+    color: $red;
+    content: " *";
+}
+
+.form-input {
+    background-color: transparent;
+    border: 1.5px solid $grey;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    height: 50px;
+    padding: 5px 10px;
+    width: 100%;
+}
+input.form-input:read-only {
+    background-color: $black;
+    color: $white;
+}
+
+#challenge-difficulty {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 800px) {
+    .form-label {
+        margin: 0 0 5px 0px;
+    }
+
+    .form-input {
+        font-size: 15px;
+    }
+}

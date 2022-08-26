@@ -1,0 +1,22 @@
+/** Layout - Main **/
+main {
+    flex: 1 0 auto;
+    min-height: calc(100vh - 100px);
+    width: 80%;
+}
+
+.main-title {
+    font-size: 32px;
+    margin: 15px auto 30px auto;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        width: 95%;
+    }
+
+    .main-title {
+        font-size: 25px;
+    }
+}
