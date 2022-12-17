@@ -1,3 +1,5 @@
+<meta property="og:image" content="https://raw.githubusercontent.com/sebastien-d-me/Frontend-Mentor-Starter/main/assets/images/logo/logo.png">
+
 # Frontend Mentor - Starter
 
 > Starter for the Frontend Mentor challenges !
