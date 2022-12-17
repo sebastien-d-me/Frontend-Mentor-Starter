@@ -1,4 +1,4 @@
-<meta property="og:image" content="https://raw.githubusercontent.com/sebastien-d-me/Frontend-Mentor-Starter/main/assets/images/logo/logo.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/sebastien-d-me/Frontend-Mentor-Starter/main/assets/images/logo/logo_invert.png">
 
 # Frontend Mentor - Starter
 
